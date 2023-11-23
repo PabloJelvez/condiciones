@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Stickers</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Stickers</a></li>
+            <li><a href="/password.html">Password</a></li>
+        </ul>
+</header>
+    <div class="content">
+        <div class="tittle"><h3>Puedes llevar hasta 10 stickers en total</h3></div>
+        <div class="stickers">
+            <div class="contentImg">
+                <img src="./assets/img/desarrollo-web.png" alt="sticker1">
+                <input type="text" id="input1">
+            </div>
+            <div class="contentImg">
+                <img src="./assets/img/programacion-web.png" alt="sticker2">
+                <input type="text" id="input2">
+            </div>
+           <div class="contentImg">
+             <img src="./assets/img/sitio-web.png" alt="sticker3">
+             <input type="text" id="input3">
+            </div>
+        </div>
+        <div class="button">
+            <p id="result"></p>
+            <button onclick="
+            s1 = Number(document.querySelector('#input1').value)
+            s2 = Number(document.querySelector('#input2').value)
+            s3 = Number(document.querySelector('#input3').value)
+            total = s1 + s2 + s3
+            showResult = document.querySelector('#result')
+            if(total <= 10 && total >= 0){
+                showResult.innerHTML = 'Llevas ' + total + ' stickers'
+            }else if(total > 10){
+                showResult.innerHTML = 'Llevas demasiados stickers'
+            }else{
+                showResult.innerHTML = 'Debes ingresar un valor  mayor a 0'
+            } 
+            ">Verificar</button>
+        </div>
+    </div>
+</body>
+</html>

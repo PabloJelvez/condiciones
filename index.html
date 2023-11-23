@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Agregar y quitar borde</title>
+</head>
+<body>
+    <header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/stickers.html">Stickers</a></li>
+                <li><a href="#">Password</a></li>
+            </ul>
+    </header>
+    <div class="cat">
+        <img src="./assets/img/1688776947939.jpg" alt="Gato amarillo" id="catImg">
+        <script>
+            let border = false
+            const catImg = document.querySelector("#catImg")
+
+            catImg.addEventListener("click", () => {
+                if(border == false){
+                    catImg.style.border = "solid red 2px "
+                    border = true
+                }else{
+                    catImg.style.border = "none"
+                    border = false
+                }
+            } )
+        </script>
+    </div>
+    
+</body>
+</html>
