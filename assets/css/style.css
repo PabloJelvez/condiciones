@@ -87,6 +87,7 @@ header ul li a{
  .container-flex{
     display: flex;
     margin: 10px;
+    flex-direction: column;
  }
  .divSelect{
     display: flex;
