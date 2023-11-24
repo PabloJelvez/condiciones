@@ -70,6 +70,28 @@ header ul li a{
     align-items: center;
  }
  .button button{
-    width: 80px;
+    width: 80px; 
     margin: 10px;
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: solid black 2px;
+    width: 700px;
+    height: 200px;
+    margin: 10px 0 0 350px;
+    
+ }
+ .container-flex{
+    display: flex;
+    margin: 10px;
+ }
+ .divSelect{
+    display: flex;
+    
+ }
+ .select{
+    margin: 2px;
  }
