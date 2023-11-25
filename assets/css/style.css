@@ -88,6 +88,7 @@ header ul li a{
     display: flex;
     margin: 10px;
     flex-direction: column;
+    align-items: center;
  }
  .divSelect{
     display: flex;
@@ -95,4 +96,9 @@ header ul li a{
  }
  .select{
     margin: 2px;
+ }
+
+ .container-flex button{
+   width: 160px;
+   margin: 5px;
  }
